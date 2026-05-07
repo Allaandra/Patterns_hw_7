@@ -18,7 +18,6 @@ class Logger {
 class SQLiteDB {
   constructor() {
     this.db = new sqlite3.Database('./database.sqlite')
-    // Поле email удалено
     this.db.run(`CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT,
